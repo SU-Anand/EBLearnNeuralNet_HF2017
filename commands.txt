@@ -1,0 +1,17 @@
+Standardize the resolution and color depths of the input training images
+
+dscompile <DATASET_ROOT> -outdir <OUTPUT_PATH> -dname <NAME> -dims [height]x[width]x[channels] -kernelsz 
+[preprocessing kernel size]
+
+Example:
+dscompile "C:\Users\Anand Karra\Desktop\Test Project\input_train" -outdir "C:\Users\Anand Karra\Desktop\Test Project\standard_train" -dname test_train -dims 24x24x3 -kernelsz 7x7
+
+dscompile "C:\Users\Anand Karra\Desktop\Test Project\input_validate" -outdir "C:\Users\Anand Karra\Desktop\Test Project\standard_validate" -dname test_validate -dims 1360x800x3 -kernelsz 7x7
+
+---
+Train the neural network according to the parameters given in the configuration file- configFile.conf
+
+train tutorial2.conf
+
+Example:
+train "C:\Users\Anand Karra\Desktop\Test Project\configFile.conf"
