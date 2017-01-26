@@ -1,3 +1,5 @@
+The commands to be used for performing various actions using the EBLearn library. For more information consult the documentation of the library.
+
 Standardize the resolution and color depths of the input training images
 
 dscompile <DATASET_ROOT> -outdir <OUTPUT_PATH> -dname <NAME> -dims [height]x[width]x[channels] -kernelsz 
